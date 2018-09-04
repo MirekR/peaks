@@ -1,5 +1,5 @@
 1) Copy your data to the data folder. Assuming naming convetion is S*_tabular.txt
-2) Open command line and execute: chmod 777 prepareData.sh
+2) Open command line and execute: chmod 777 prepareData.sh && ./prepareData.sh
 3) Start docker using following command
    docker run -v $(pwd)/data:/data -v $(pwd)/docker-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=start123 -d mysql:latest
 
