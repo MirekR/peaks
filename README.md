@@ -6,9 +6,11 @@
 4) find out id of you container: docker ps
 5) connect to the container
    docker exec -it {YOUR_CONTAINER_ID} /bin/bash
-6) In the docker (you'll see root@strangenumber) execute following command to populate database:
+6) create table running:
+    mysql -u root -p < ./data/createKeySpaceAndTable.sql   
+7) In the docker (you'll see root@strangenumber) execute following command to populate database:
    cat ./data/S*.sql > all.sql && mysql -u root -p < all.sql
 
-7) selecting data run following:
+8) selecting data run following:
    mysql -u root -p < ./data/select/sql > peaks.txt
 
