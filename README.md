@@ -12,5 +12,9 @@
    cat ./data/S*.sql > all.sql && mysql -u root -p < all.sql
 
 8) selecting data run following:
-   mysql -u root -p < ./data/select/sql > ./data/peaks.txt
+   mysql -u root -p < ./data/exec_select.sql > ./data/peaks.txt
 
+
+
+note: if you're running this on the MacBook make sure you have correct version of the gnu-sed installed. 
+It can be installed using: brew install gnu-sed --with-default-names
