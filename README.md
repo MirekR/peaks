@@ -12,5 +12,5 @@
    cat ./data/S*.sql > all.sql && mysql -u root -p < all.sql
 
 8) selecting data run following:
-   mysql -u root -p < ./data/select/sql > peaks.txt
+   mysql -u root -p < ./data/select/sql > ./data/peaks.txt
 
