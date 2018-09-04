@@ -1,1 +1,1 @@
-select t1.* from chrom t1 where exists (select 1 from chrom t2  where t2.chrom = t1.chrom  and t2.start between t1.start - 5 and t1.start + 5  and t2.end between t1.end - 5 and t1.end + 5 and t1.file_name != t2.file_name);
+select t1.* from peak.chrom t1 where exists (select 1 from peak.chrom t2  where t2.chrom = t1.chrom  and t2.start between t1.start - 5 and t1.start + 5  and t2.end between t1.end - 5 and t1.end + 5 and t1.file_name != t2.file_name);
