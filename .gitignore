@@ -1,4 +1,5 @@
 data/S*.txt
 data/S*.sql
+data/peaks.txt
 docker-data
 .DS_Store
